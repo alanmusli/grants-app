@@ -1,0 +1,21 @@
+/* 1. New Tailwind v4 Import */
+@import "tailwindcss";
+
+/* 2. Custom Variables */
+:root {
+  --finki-blue: #003366;
+  --finki-blue-hover: #002244;
+  --finki-blue-light: #0056b3;
+  --bg-main: #f3f4f6; 
+  --text-main: #1f2937; 
+}
+
+/* 3. Global Base Styles (Standard CSS instead of @apply to prevent v4 strict errors) */
+html, body {
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
