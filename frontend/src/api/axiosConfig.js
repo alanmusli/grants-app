@@ -2,8 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
     // FIXED: Point to the local secure backend for development
-    baseURL: 'https://localhost/api', 
-    
+    baseURL: 'https://localhost/api',    
     withCredentials: true,
     headers: {
         'Content-Type': 'application/json'

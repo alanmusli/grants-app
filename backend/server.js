@@ -7,6 +7,7 @@ const cors = require('cors');
 
 const authRoutes = require('./routes/auth');
 const applicationRoutes = require('./routes/applications');
+const adminRoutes = require('./routes/admin'); 
 
 const app = express();
 
@@ -78,6 +79,7 @@ app.post('/api/auth/logout', (req, res) => {
 // --- Main API Routes ---
 app.use('/api/auth', authRoutes);
 app.use('/api/applications', applicationRoutes);
+app.use('/api/admin', adminRoutes); 
 
 // --- HTTPS Server Initialization ---
 try {
